@@ -44,6 +44,6 @@ window.renderStatistics = function (ctx, players, times) {
     } else {
       ctx.fillStyle = 'rgba(0, 0, 255, ' + Math.round(Math.random() * 100) / 100 + ')';
       ctx.fillRect(CLOUD_X + GAP_BAR + (GAP_BAR + BAR_WIDTH) * i, CLOUD_Y + GAP * 6 + (CLOUD_HEIGHT - (GAP * 7) - ((GIS_HEIGHT * times[i]) / maxTime) - GAP - FONT_GAP), BAR_WIDTH, (GIS_HEIGHT * times[i]) / maxTime);
-    }	
+    }
   }
 };
