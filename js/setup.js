@@ -48,15 +48,14 @@ setupClose.addEventListener('keydown', function (evt) {
 
 
 var generateData = function (value) {
-	var data = value[Math.floor(Math.random() * value.length)];
-	return data;
+  var data = value[Math.floor(Math.random() * value.length)];
+  return data;
 };
 
 var setupCoat = document.querySelector('.setup-wizard-appearance .wizard-coat');
 var inputs = document.querySelector('.setup-wizard-appearance');
 var inputCoat = inputs.querySelector('input');
 
-console.log(inputCoat);
 setupCoat.addEventListener('click', function () {
   setupCoat.style.fill = generateData(COAT_COLORS);
   inputCoat.setAttribute('value', setupCoat.style.fill);
